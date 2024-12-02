@@ -1,0 +1,14 @@
+@use 'variaveis';
+
+.subscribe{
+    background: variaveis.$colorSubscribe;
+    height: 183px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    h2{
+        margin-bottom: 20px;
+    }
+}

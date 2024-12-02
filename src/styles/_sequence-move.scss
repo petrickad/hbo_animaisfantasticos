@@ -1,0 +1,41 @@
+.more_move{
+    padding: 5vw 8vw;
+    h2{
+        margin-bottom: 20px;
+    }
+
+    &__sequence{
+        .movesone{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            gap: 16px;
+            width: 320px;
+
+            &__sequence{
+                width: 320px;
+                margin-bottom: 30px;
+
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    &__watchtoo{
+
+        .moves{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            
+            
+            &__watchtoo{
+                margin-bottom: 30px;
+                
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

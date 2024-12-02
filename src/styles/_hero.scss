@@ -1,0 +1,38 @@
+@use 'variaveis';
+
+.hero{
+    background: linear-gradient(to top, variaveis.$corFundo, rgba(variaveis.$corFundo, 80%), rgba(0, 0, 0, 0.048), transparent),
+                url(../images/fantastics_beasts_hero.png);
+    padding: 8vw;
+    min-height: 90vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__content{
+        max-width: 540px;
+
+        &__branding{
+            img{
+                width: 100%;
+            }
+        }
+
+        &__specification{
+            display: flex;
+            flex-wrap: wrap;
+
+            p{
+                margin-right: 16px;
+                margin-top: 16px;
+            }
+        }
+        .specification_move{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        p{
+            margin-top: 20px;
+        }
+    }
+}

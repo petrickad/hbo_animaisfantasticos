@@ -1,0 +1,29 @@
+.header{
+    img{
+        margin-right: 15px;
+    }
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.884);
+    width: 100%;
+    padding: .5rem 1rem;
+    display: flex;
+
+    &__side{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        font-weight: bold;
+
+        &__first{
+            margin-top: 12px;
+            ul{
+                display: flex;
+                justify-self: center;
+                align-items: center;
+                text-align: center;
+            }
+        }
+    }
+
+}
