@@ -10,8 +10,8 @@ function styles() {
         .pipe(gulp.dest('./dist/css'));
 }
 
-function comprimeJavaScript() {
-    return gulp.src('./src/*.js')
+function scripts() {
+    return gulp.src('./src/scripts/*.js')
         .pipe(uglify())
         .pipe(obfuscate())
         .pipe(gulp.dest('./dist/scripts'));
@@ -23,7 +23,9 @@ function images() {
         .pipe(gulp.dest('./dist/images'));
 }
 
-exports.default = gulp.parallel(styles, images, comprimeJavaScript);
+exports.default = gulp.parallel(styles, images, scripts);
+
  exports.watch = function(){
     gulp.watch('./src/styles/*.scss', gulp.parallel(styles));
+    gulp.watch('./src/scripts/*.js', gulp.parallel(scripts));
  }
