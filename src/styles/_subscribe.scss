@@ -7,8 +7,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media (max-width: 767px) {
+        height: 230px;
+    }
     
     h2{
         margin-bottom: 20px;
+        
+        @media (max-width: 767px) {
+            text-align: center;
+        }
     }
 }
